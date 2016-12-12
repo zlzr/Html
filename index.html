@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<head>
+<meta charset="utf-8"/>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<link type="text/css" href="css/basic.css" rel="stylesheet" />
+<link type="text/css" href="css/style.css" rel="stylesheet" />
+<link type="text/css" href="css/style2.css" rel="stylesheet" />
+<script type="text/javascript" src="js/zepto.js" ></script>
+<script type="text/javascript" src="js/swiper-2.1.min.js"></script>
+<title></title>
+
+  
+</head>
+
+<body class="mid2">
+    <!--头部-->
+    <header class="head">
+    	<div class="head_c">
+        	<a href="javascript:butid();"><div class="head_l color_f" id="butid">全国<img class="quanguo_map" src="images/map.png" /></div></a>
+            <div class="head_r" style="display:none"></div>
+        	清洁吧
+        </div>
+    </header>
+    <div class="kong50"></div>
+    <!--end头部-->
+    
+    <!--广告图片-->
+
+<body style="margin:0px;">
+<div id="wrap" class="clearfix overflow mg-auto"> 
+    <div class="swiper-container overflow">
+    
+        <div class="swiper-wrapper" id="swiper-wrapper">
+            <div class="swiper-slide">
+                <a href="#"><img src="images/01.jpg" alt="#" title="#" ></a>
+            </div>
+        
+            <div class="swiper-slide" >
+                <a href="#"><img src="images/02.png" alt="#" title="#" ></a>
+            </div>
+        </div> 
+        <div class="pagination"></div> 
+    
+    </div>
+	<script type="text/javascript">   
+      var newSlideSize = function slideSize(){
+			var w = $(window).width();
+      $(".swiper-container").css("height",w/3 + "px");
+			$(".swiper-wrapper").css("height",w/3 + "px");
+			$(".swiper-slide").css("height",w/3 + "px");
+			$(".swiper-slide img").css("height",w/3 + "px");};
+         newSlideSize();
+         $(window).resize(function(){
+           newSlideSize();
+         });
+    </script> 
+</div>
+
+
+
+
+</body> 
+<script type="text/javascript">
+window.onload = function(){
+	var mySwiper = new Swiper('.swiper-container',{   
+		pagination: '.pagination',
+		loop:true,
+		autoplay:3000,	
+		paginationClickable: true,
+		onSlideChangeStart: function(){
+		   //�ص�����
+		}
+	}); 
+	
+};
+//活动精选下面的代码
+$(document).ready(function(){
+					kai();
+					var w = $(window).width();
+					var w12 = $(".ind_xx_ul_div5").width()-12;
+					$(".ind_xx_ul_div5 img").css("width",w12/2+"px");
+					var h12 = (w12/2)/1.75;
+					$(".ind_xx_ul_div5").css("height",(h12+7)+"px");
+					$(".ind_xx_ul_div5 img").css("height",h12+"px");
+					$(".ind_xx_ul_div6").css("padding-right",((w12/2)+5)+"px");
+					$(".ind_xx_ul_div7").css("padding-right",((w12/2)+5)+"px");
+					var div7 = h12-46;
+					var div8 = div7%18;
+					$(".ind_xx_ul_div7").css("height",(div7-div8+1)+"px");
+					var w22 = w12/4;
+					var h22 = (w12/4)/1.75;
+					$(".ind_xx_ul_div3").css("height",(h22)+"px");
+					$(".ind_xx_ul_div3 img").css("width",w22+"px");
+					$(".ind_xx_ul_div3 img").css("height",h22+"px");
+					$(".ind_xx_ul_div").css("padding-right",(w22+5)+"px");
+					$(".ind_xx_ul_div3").css("padding-right",(w22+5)+"px");
+					var xxdiv2 = h22%18;
+					$(".ind_xx_ul_div2").css("height",(h22-xxdiv2)+"px");
+				});
+</script>
+
+    <div style="clear:both; width:100%; height:10px;"></div>
+    
+    <!--中部-->
+	<div class="">
+    	<!--导航-->
+    	<ul class="ind_ul font16">
+        	<li><a href="zbxx.html"><div><img src="images/index01.png" /><br/>招标信息</div></a></li>
+            <li><a href="qdhz.html"><div><img src="images/index02.png" /><br/>抢单活动</div></a></li>
+            <li><a href="yybj.html"><div><img src="images/index03.png" /><br/>预约保洁</div></a></li>
+            <li><a href="sale.html"><div><img src="images/index04.png" /><br/>折扣商城</div></a></li>
+            <li><a href="hhyyfl.html"><div><img src="images/index05.png" /><br/>行业黄页</div></a></li>
+            <li><a href="fbhdz.html"><div><img src="images/index06.png" /><br/>信息发布</div></a></li>
+        </ul>
+        
+        <!--活动精选-->
+        <div class="">
+        	<div class="ind_hd backg_hui">
+            	<div class="ind_hd_div"></div>
+                <div class="ind_hd_div2 font14"><a href="indexmore.html"><img src="images/moreinter.png" />活动精选<span class="font9">更多>></span></a></div>
+            </div>
+        	<ul class="ind_hd2">
+            	<li><a href="wzy.html"><div class="ind_hd2_div"><img src="images/05.png" /><br/>2015活动精选</div></a></li>
+              <li><a href="wzy.html"><div class="ind_hd2_div"><img src="images/06.png" /><br/>2015活动精选</div></a></li>
+              <li><a href="wzy.html"><div class="ind_hd2_div"><img src="images/07.png" /><br/>2015活动精选</div></a></li>
+              <li><a href="wzy.html"><div class="ind_hd2_div"><img src="images/05.png" /><br/>2015活动精选</div></a></li>
+            </ul>
+        
+        </div>
+        
+        <!---->
+        <div class="backg_hui" style="clear:both; height:10px; width:100%;"></div>
+        <div class="ind_xx_ul_div5">
+        	<a href="indexmore.html">
+        	<div class="ind_xx_ul_div6">传递公益正能量传递公益正能量传递公益正能量传递公益正能量传递公益正能量</div>
+            <div class="ind_xx_ul_div7 font9 color_hui9">传递公益正能量传递公益正能量传递公益正能量传递公益正能量传递公益正能量传递公益正能量传递公益正能量传递公益正能量</div>
+            <img src="images/11.png" />
+          </a>
+        </div>
+        <ul class="ind_xx_ul">
+        	<li>
+        		<a href="indexmore.html">
+            	<div class="ind_xx_ul_div3_border">
+                	<div class="ind_xx_ul_div">传递公益正能量</div>
+                	<div class="ind_xx_ul_div3"><div class="ind_xx_ul_div2 font9 color_hui9">传递公益正能量传递公益正能量传递公益正能量传递公益正能量</div><img src="images/10.png" /></div>
+              </div>
+            </a>
+            </li>
+            <li>
+            	<a href="indexmore.html">
+            		<div>
+                	<div class="ind_xx_ul_div">传递公益正能量</div>
+                	<div class="ind_xx_ul_div3"><div class="ind_xx_ul_div2 font9 color_hui9">传递公益正能量传递公益正能量传递公益正能量传递公益正能量</div><img src="images/10.png" /></div>
+                </div>
+              </a>
+            </li>
+            <li>
+            	<a href="indexmore.html">
+            		<div class="ind_xx_ul_div3_border">
+                	<div class="ind_xx_ul_div">传递公益正能量传递公益正能量</div>
+                	<div class="ind_xx_ul_div3"><div class="ind_xx_ul_div2 font9 color_hui9">传递公益正能量传递公益正能量传递公益正能量传递公益正能量</div><img src="images/10.png" /></div>
+                </div>
+              </a>
+            </li>
+            <li>
+            	<a href="indexmore.html">
+            		<div>
+                	<div class="ind_xx_ul_div">传递公益正能量传递公益正能量</div>
+                	<div class="ind_xx_ul_div3"><div class="ind_xx_ul_div2 font9 color_hui9">传递公益正能量传递公益正能量传递公益正能量传递公益正能量</div><img src="images/10.png" /></div>
+                </div>
+              </a>
+            </li>
+        </ul>
+        
+        <div class="backg_hui" style="clear:both; height:10px; width:100%;"></div>
+        
+    </div>
+    
+    <!------弹出框------->
+    <div class="content" style="display: none;">
+    	<div class="content_div color_lan">
+            <div>
+                <a href="javascript:butidk();"><img src="images/close.png" /></a>筛选
+            </div>
+        </div>
+        <div class="backg_hui" style="height:61px; width:100%; clear:both;"></div>
+        <ul class="content_ul color_hui9">
+            <li>广西</li>
+            <li>广东</li>
+            <li>云南</li>
+            <li>河北</li>
+            <li>四川</li>
+            <li>山西</li>
+        </ul>
+    </div>
+    
+    <div class="content2" style="display: none;">
+    	<div class="content2_div color_lan">
+            <div>
+                <a href="javascript:butidk();"><img src="images/close.png" /></a>筛选
+            </div>
+        </div>
+        <div class="backg_hui" style="height:61px; width:100%; clear:both;"></div>
+        <ul class="content2_ul color_hui9">
+            <li>南宁</li>
+            <li>桂林</li>
+            <li>柳州</li>
+            <li>崇左</li>
+            <li>玉林</li>
+            <li>贵港</li>
+            <li>北海</li>
+            <li>梧州</li>
+        </ul>
+    </div>
+    
+	<!--end中部-->
+    <script>
+	function kai(){
+		var w2 = $(".ind_hd2_div").width();
+		$(".ind_hd2_div").css("height",(w2/1.8+28)+"px");
+		$(".ind_hd2_div img").css("height",w2/1.8+"px");
+		var w3 = $(".swipe_img").width();
+		$(".swipe_img").css("height",(w3/3+20)+"px");
+		$(".swipe_img img").css("height",(w3/3+20)+"px !important");
+		
+		var h = $(window).height();
+		$(".content").css("height",(h-50)+"px");
+		$(".content_ul li").bind("click",butid2k);
+		$(".content2").css("height",(h-50)+"px");
+		$(".content2_ul li").bind("click",butid5k);
+	};
+	function butid(){
+		$(".content").css("display","block");
+		$(".content").animate({right: '0px',width: '100%'}, "slow");
+		document.body.style.overflow = "hidden";
+		document.documentElement.style.overflow = "hidden";
+	}
+	function butidk(){
+		$(".content").animate({right: '0px',width: '0%'}, "slow");
+		document.body.style.overflow = "auto";
+		document.documentElement.style.overflow = "auto";
+		var t=setTimeout("displaykk()",500);
+		$(".content2").animate({right: '0px',width: '0%'}, "slow");
+		var t=setTimeout("displaykk2()",500);
+	}
+	function butid2k(){
+		$(".content").animate({right: '0px',width: '0%'}, "slow");
+		document.body.style.overflow = "auto";
+		document.documentElement.style.overflow = "auto";
+		var t=setTimeout("displaykk()",500);
+		butid3k();
+	}
+	function butid3k(){
+		$(".content2").css("display","block");
+		$(".content2").animate({right: '0px',width: '100%'}, "slow");
+		document.body.style.overflow = "hidden";
+		document.documentElement.style.overflow = "hidden";
+	}
+	function butid5k(){
+		$(".content2").animate({right: '0px',width: '0%'}, "slow");
+		document.body.style.overflow = "auto";
+		document.documentElement.style.overflow = "auto";
+		var t=setTimeout("displaykk2()",500);
+	}
+
+	function displaykk(){
+		//alert('5 seconds!');
+		$(".content").css("display","none");
+	}
+	function displaykk2(){
+		//alert('5 seconds!');
+		$(".content2").css("display","none");
+	}
+	</script>
+
+<!--尾部-->
+<div style="clear: both;height: 60px;"></div>
+    <footer  id="footer">
+        <ul>
+            
+                <li class="color_foot">
+                	<a href="javascript:;">
+                    <span class="icon-icon1"></span><br />
+                    首页
+                  </a>
+                </li>
+            
+            
+                <li>
+                	<a href="home.html">
+                    <span class="icon-icon2"></span><br />
+                    我
+                  </a>
+                </li>
+            </a>
+            
+                <li>
+                	<a href="javascript:;">
+                    <span class="icon-icon3"></span><br />
+                    e官网
+                  </a>
+                </li>
+            
+            
+                <li>
+                	<a href="manage.html">
+                    <span class="icon-icon4"></span><br />
+                    管理
+                  </a>
+                </li>
+            </a>
+        </ul>
+    </footer>
+<!--end尾部-->
+</body>
+</html>

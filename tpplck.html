@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<head>
+<meta charset="utf-8"/>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<link type="text/css" href="css/basic.css" rel="stylesheet" />
+<link type="text/css" href="css/style.css" rel="stylesheet" />
+<script type="text/javascript" src="js/zepto.js" ></script>
+<title></title>
+
+  
+</head>
+
+<body>
+    <!--头部-->
+    <header class="head">
+    	<div class="head_c">
+        	<a href="javascript:window.history.back(-1)"><div class="head_l">返回</div></a>
+            <a href="#"><div class="head_r" style="display:none;"></div></a>
+        	早上起床吃什么好？
+        </div>
+    </header>
+    <div class="kong50"></div>
+    <!--end头部-->
+    
+    <!--中部-->
+	<div class="mid">
+    	
+        <div class="wrap" id="divspacerank">
+					<div class="md-head" id="blogs_spacerank">
+						<a class="a10 wrap" id="blogs_spacerank_tab_0" hideFocus onClick="blogs_spacerank_ck(0);return false;" href="javascript:;">管理投票</a>
+						<a class="a10 wrap cur wid" id="blogs_spacerank_tab_1" hideFocus onClick="blogs_spacerank_ck(1);return false;" href="javascript:;">投票</a>
+						<a class="a10 wrap" id="blogs_spacerank_tab_2" hideFocus onClick="blogs_spacerank_ck(2);return false;" href="javascript:;">评论</a>
+						<a class="a10 wrap" id="blogs_spacerank_tab_3" hideFocus onClick="blogs_spacerank_ck(3);return false;" href="javascript:;">赞</a>
+						<br class=clear>
+					</div>
+					<div class="md-body">
+						<div class="kong2"></div>
+					<!--管理投票-->
+						<div id="blogs_spacerank_0" style="display: none">
+                        	<!--投票-->
+                            <div class="zan_h"></div>
+                        	<ul class="zan_g_ul">
+                            	<li class="zan_g_ul_li">
+                                	<div class="zan_g_border2">投票<br/><span class="color_hui9">0</span></div>
+                                </li>
+                                <li class="zan_g_ul_li2">
+                                    <div class="zan_g_border2 zan_g_border3">阅读&nbsp;<span class="color_hui9">0</span></div>
+                                    <div class="zan_g_border2">评论&nbsp;<span class="color_hui9">0</span></div>
+                                </li>
+                                <li class="zan_g_ul_li2">
+                                    <div class="zan_g_border2 zan_g_border3">分享&nbsp;<span class="color_hui9">0</span></div>
+                                    <div class="zan_g_border2">赞<span class="kong_zi">空</span>&nbsp;<span class="color_hui9">0</span></div>
+                                </li>
+                            </ul>
+                            <!--投票信息-->
+                            <div class="zan_h color_hui9">投票信息</div>
+                            <ul class="zan_g_ul2">
+                            	<li>早上起床吃什么好？</li>
+                                <li class="zan_g_ul2_li color_lan"><a href="#"><img src="images/change.png" />修改</a></li>
+                            </ul>
+                            <!--其他操作-->
+                            <div class="zan_h color_hui9">你可以进行以下操作</div>
+                            <ul class="zan_g_ul3">
+                                <li><a href="#"><div><img src="images/share.png" /><br/>分享</div></a></li>
+                                <li><a href="#"><div class="dcmd"><img src="images/download.png" /><br/>导出名单</div></a></li>
+                                <li><a href="tpyhck.html"><div class="zan_g_ul3_li_border"><img src="images/see.png" /><br/>查看</div></a></li>
+                                <li><a href="#"><div><img src="images/down.png" /><br/>下载二维码</div></a></li>
+                                <li><a href="vote.html"><div><img src="images/more.png" /><br/>再发一个</div></a></li>
+                                <li><a href="#"><div class="zan_g_ul3_li_border"><img src="images/open.png" /><br/>开放报名</div></a></li>
+                            </ul>
+                            
+                            <!--弹出导出名单-->
+                            <div class="dcmd_div3" style="display:none;">
+                                <div style=" height:160px; width:100%; clear:both;"></div>
+                                <div class="dcmd_div">
+                                    <a href="#">复制下载链接</a>
+                                    <a href="#">发送到邮箱</a>
+                                    <a class="color_hui9" href="javascript:dcmdclose();">取消</a>
+                                </div>
+                            </div>
+                            <script>
+							$(document).ready(function(){
+								$(".dcmd").bind("click",dcmd);
+							});
+							function dcmd(){
+								$(".dcmd_div3").css("display","block");
+							}
+							function dcmdclose(){
+								$(".dcmd_div3").css("display","none");
+							}
+							</script>
+                            
+						</div>
+					<!--投票-->
+						<div id="blogs_spacerank_1" style="display: ">
+                        	<div class="graphbox_div2">单选投票，<span class="color_lan">121</span>票</div>
+							<div id="graphbox"> 
+                                <div class="graphbox_div">选项1:水<span class="graphbox_div_span2">35票</span><span class="graphbox_div_span">35%</span></div>
+                                <div class="graph"><span class="orange" style="width:35%;"></span></div>
+                            </div>
+                            <div id="graphbox"> 
+                                <div class="graphbox_div">选项2:牛奶<span class="graphbox_div_span2">10票</span><span class="graphbox_div_span">10%</span></div>
+                                <div class="graph"><span class="green" style="width:10%;"></span></div>
+                            </div>
+                            <div id="graphbox"> 
+                                <div class="graphbox_div">选项3:零食<span class="graphbox_div_span2">75票</span><span class="graphbox_div_span">75%</span></div>
+                                <div class="graph"><span class="blue" style="width:75%;"></span></div>
+                            </div>
+                            <div id="graphbox"> 
+                                <div class="graphbox_div">选项4:水果<span class="graphbox_div_span2">1票</span><span class="graphbox_div_span">1%</span></div>
+                                <div class="graph"><span class="red" style="width:1%;"></span></div>
+                            </div>
+                            <div class="zan_p_div3 color_hui9">已全部加载</div>
+						</div>
+					<!--评论-->
+						<div id="blogs_spacerank_2" style="display: none;">
+                        	<div style="display: ;">
+							<div class="zan_p_div4"><span class="color_lan">2</span>个评论</div>
+                            <div class="zan_p_div zan_p_border1">
+                            	<div class="zan_p_div2"><img src="images/loginlogo.png" /></div>
+                                <ul>
+                                	<li class="zan_ul_li color_lan font16"><span class="color_hui9">昨天</span>忧伤的你：</li>
+                                    <li class="zan_ul_li2">早上起床吃什么好。</li>
+                                </ul>
+                            </div>
+                            <div class="zan_p_div">
+                            	<div class="zan_p_div2"><img src="images/loginlogo.png" /></div>
+                                <ul>
+                                	<li class="zan_ul_li color_lan font16"><span class="color_hui9">10-12</span>忧伤的你：</li>
+                                    <li class="zan_ul_li2">早上起床吃什么好。</li>
+                                </ul>
+                            </div>
+                            <div class="zan_p_div3 color_hui9">已全部加载</div>
+                            </div>
+                            
+                            <!--空评论-->
+                            <div class="flow-no-pro" style="display:none;">
+                                <div id="flow-gouwukong-div2">
+                                    <div class="flow-gouwukong-div4">
+                                        <img src="images/smiling2.png">
+                                    </div>
+                                    还没有人评论<br>
+                                    分享至QQ、微信、微博获得更多传播
+                                   <a href=""><div class="flow-gouwukong-div5 backg_lan font18">分 享</div></a>
+                                </div>
+                            </div>
+                            <!--end空评论-->
+						</div>
+					<!--赞-->
+						<div id="blogs_spacerank_3" style="display: none">
+                        	<div style="display:none;">
+                                <div class="zan_p_div4"><span class="color_lan">2</span>个评论</div>
+                                <div class="zan_p_div zan_p_border1">
+                                    <div class="zan_p_div2"><img src="images/loginlogo.png" /></div>
+                                    <ul class="zan_z_ul">
+                                        <li class="zan_z_ul_li color_lan font16"><span class="color_hui9">昨天</span>忧伤的你</li>
+                                    </ul>
+                                </div>
+                                <div class="zan_p_div">
+                                    <div class="zan_p_div2"><img src="images/loginlogo.png" /></div>
+                                    <ul class="zan_z_ul">
+                                        <li class="zan_z_ul_li color_lan font16"><span class="color_hui9">10-12</span>忧伤的你忧伤的你忧伤的你忧伤的你忧伤的你忧伤的你忧伤的你忧伤的你忧伤的你</li>
+                                    </ul>
+                                </div>
+                                <div class="zan_p_div3 color_hui9">已全部加载</div>
+							</div>
+                            
+                            <!--空点赞-->
+                            <div class="flow-no-pro" style="display: ;">
+                                <div id="flow-gouwukong-div2">
+                                    <div class="flow-gouwukong-div4">
+                                        <img src="images/smiling2.png">
+                                    </div>
+                                    还没有人赞<br>
+                                    分享至QQ、微信、微博获得更多传播
+                                   <a href=""><div class="flow-gouwukong-div5 backg_lan font18">分 享</div></a>
+                                </div>
+                            </div>
+                        <!--end空点赞-->
+                        </div>
+                        
+					</div>
+				</div>
+        
+        <div class="kong10"></div>
+    </div>
+	<!--end中部-->
+    <script>
+		// 切换选卡
+		var blogs_spacerank_index = 1, blogs_spacerank_class = 'a10 wrap ';
+		var blogs_spacerank_list = document.getElementById('blogs_spacerank').getElementsByTagName('a');
+		function blogs_spacerank_ck(_idx) {
+			blogs_spacerank_list[blogs_spacerank_index].className = blogs_spacerank_class;
+			blogs_spacerank_list[_idx].className = blogs_spacerank_class + ' cur wid';
+			document.getElementById('blogs_spacerank_' + blogs_spacerank_index).style.display = 'none';
+			document.getElementById('blogs_spacerank_tab_' + blogs_spacerank_index).innerHTML = document.getElementById('blogs_spacerank_tab_' + blogs_spacerank_index).innerHTML.replace("", "");
+			document.getElementById('blogs_spacerank_' + _idx).style.display = 'block';
+			document.getElementById('blogs_spacerank_tab_' + _idx).innerHTML = document.getElementById('blogs_spacerank_tab_' + _idx).innerHTML + "";
+			blogs_spacerank_index = _idx;
+		}
+	</script>
+    
+
+<!--尾部-->
+<footer>
+
+</footer>
+<!--end尾部-->
+</body>
+</html>

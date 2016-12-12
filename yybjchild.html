@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<head>
+<meta charset="utf-8"/>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<link type="text/css" href="css/basic.css" rel="stylesheet" />
+<link type="text/css" href="css/style.css" rel="stylesheet" />
+<script type="text/javascript" src="js/zepto.js" ></script>
+<title></title>
+
+  
+</head>
+
+<body class="mid2">
+    <!--头部-->
+    <header class="head">
+    	<div class="head_c">
+        	<a href="javascript:window.history.back(-1)"><div class="head_l">返回</div></a>
+            <a href="#"><div class="head_r" style="display:none;"></div></a>
+        	预约保洁子页面
+        </div>
+    </header>
+    <div class="kong50"></div>
+    <!--end头部-->
+    
+    <!--中部-->
+	<div class="mid">
+    	
+        <div class="zb_kong"></div>
+        <ul class="yuyue_ul color_lan font16">
+            <li><span>预约</span><input class="color_hui9 font16" placeholder="家庭保洁" name="" type="text"></li>
+            <li><span>称呼</span><input class="color_hui9 font16" placeholder="李师傅" name="" type="text"></li>
+            <li><span>电话</span><input class="color_hui9 font16" placeholder="电话号码" name="" type="text"></li>
+            <li><span>深圳</span><input class="color_hui9 font16" placeholder="服务地址" name="" type="text"></li>
+            <li><span><img class="yuyue_ul_img" src="images/timeblue.png" /></span><input class="color_hui9 font16" placeholder="请选择服务时间" name="" type="text"></li>
+        </ul>
+        <div class="zb_kong"></div>
+        <ul class="yuyue_ul2 color_lan font16">
+            <li><span>备注</span><input class="color_hui9 font16" placeholder="请填写其他要求" name="" type="text"></li>
+        </ul>
+        <div class="zb_kong"></div>
+        <a href="javascript:yuyue();"><div class="yuyue_div backg_lan">预约提交</div></a>
+        
+        
+        <div class="kong10"></div>
+    </div>
+	<!--end中部-->
+    
+    <div class="yuyue_div2" style="display:none;">
+    	<div class="yuyue_div3">
+        	<img class="yuyue_div3_img" src="images/small01.png" /><br/>
+            <span class="color_lan yuyue_div3_span">预约成功</span><br/>
+            <span class="color_hui9 font9">
+            	请保持手机畅通<br/>
+            	我们会打电话去再次确认<br/>
+                祝您生活愉快！<br/>
+            </span>
+            
+        </div>
+    </div>
+    <script>
+    $(document).ready(function(){
+        var h = $(window).height();
+        $(".yuyue_div2").css("height",h+"px");
+		$(".yuyue_div2").bind("click",yuyueclose);
+    });
+	function yuyue(){
+		$(".yuyue_div2").css("display","block");
+		var div3 = ($(".yuyue_div3").height())/2;
+		$(".yuyue_div3").css("margin-top",-div3+"px");
+		document.body.style.overflow = "hidden";
+		document.documentElement.style.overflow = "hidden";
+	}
+	function yuyueclose(){
+		$(".yuyue_div2").css("display","none");
+		document.body.style.overflow = "auto";
+		document.documentElement.style.overflow = "auto";
+	}
+	</script>
+
+<!--尾部-->
+<footer>
+
+</footer>
+<!--end尾部-->
+</body>
+</html>

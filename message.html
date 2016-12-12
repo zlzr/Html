@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<head>
+<meta charset="utf-8"/>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<link type="text/css" href="css/basic.css" rel="stylesheet" />
+<link type="text/css" href="css/style.css" rel="stylesheet" />
+<script type="text/javascript" src="js/zepto.js" ></script>
+<title></title>
+
+  
+</head>
+
+<body class="mid2">
+    <!--头部-->
+    <header class="head">
+    	<div class="head_c">
+        	<a href="javascript:window.history.back(-1)"><div class="head_l" style="display:">返回</div></a>
+            <a href="index.html"><div class="head_r">首页</div></a>
+        	通知
+        </div>
+    </header>
+    <div class="kong50"></div>
+    <!--end头部-->
+    
+    <!--中部-->
+	<div class="mid">
+    	
+        <div class="zb_kong"></div>
+        <ul class="tz_ul color_hui9">
+            <li><span class="color_lan font16">"忧伤的你"</span> 您参加的抢单活动--清洁服务</li>
+            <li>联系人：李先生</li>
+            <li>地址：东葛路景明新城B669</li>
+            <li>号码：13557012669<a href="#"><span class="tz_span backg_lv">抢单成功</span></a></li>
+            <li>
+            	<div class="tz_div">
+                    <div class="tz_div2"></div>
+                    <div class="kong10"></div>
+                    <div class="tz_div3">如果不能按时联系，可转发至<span>有偿抢单</span></div>
+                    <div class="kong10"></div>
+                    <ul class="tz_div4">
+                        <li><img id="d1" src="images/gou2.png" /><span class="kong_zi">0</span>5%</li>
+                        <li><img src="images/gou2.png" />10%</li>
+                        <li><img src="images/gou2.png" />15%</li>
+                        <li><img src="images/gou2.png" />20%</li>
+                        <li><img src="images/gou2.png" />25%</li>
+                        <li style="color:#cc3838"><img src="images/gou1.png" />30%</li>
+                    </ul>
+                    <div class="kong10"></div>
+                    <div class="tz_div5 font18">确认转发</div>
+                    <div class="tz_div2"></div>
+                </div>
+            </li>
+        </ul>
+        
+        
+        <ul class="tz_ul color_hui9">
+            <li><span class="color_lan font16">"忧伤的你"</span> 您参加的抢单活动--清洁服务</li>
+            <li>联系人：李先生</li>
+            <li>地址：东葛路景明新城B669</li>
+            <li>号码：13557012669<a href="#"><span class="tz_span backg_huang">抢单失败</span></a></li>
+        </ul>
+        <ul class="tz_ul color_hui9">
+            <li><span class="color_lan font16">"忧伤的你"</span> 您参加的抢单活动--清洁服务</li>
+            <li>联系人：李先生</li>
+            <li>地址：东葛路景明新城B669</li>
+            <li>号码：13557012669<a href="#"><span class="tz_span backg_lv">抢单成功</span></a></li>
+        </ul>
+        <div class="kong10"></div>
+    </div>
+	<!--end中部-->
+    <script>
+	$(document).ready(function(){
+		$(".tz_div4 li").bind("click",tpyhck);
+		
+	});
+	function tpyhck(){
+		var imgObj = $(this).children("img");
+		var colorObj = $(this);
+		if(imgObj.attr("src")==="images/gou2.png"){
+			$(".tz_div4 li img").attr("src","images/gou2.png");
+			imgObj.attr("src","images/gou1.png");
+			$(".tz_div4 li").css("color","#466c93");
+			colorObj.css("color","#cc3838");
+		}
+		
+		
+		
+	/*
+	var imgObj = $(this).children("img");
+		if(imgObj.attr("src")==="images/gou2.png"){
+		imgObj.attr("src","images/gou1.png")
+		}else{
+		imgObj.attr("src","images/gou2.png")
+		}
+	*/
+	}
+	</script>
+    
+
+<!--尾部-->
+<footer>
+
+</footer>
+<!--end尾部-->
+</body>
+</html>

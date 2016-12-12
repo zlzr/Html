@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<head>
+<meta charset="utf-8"/>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<link type="text/css" href="css/basic.css" rel="stylesheet" />
+<link type="text/css" href="css/style.css" rel="stylesheet" />
+<link type="text/css" href="css/style2.css" rel="stylesheet" />
+<script type="text/javascript" src="js/zepto.js" ></script>
+<title></title>
+
+  
+</head>
+
+<body>
+    <!--头部--
+    <header class="head">
+    	<div class="head_c">
+        	<div class="head_l">管理</div>
+            <div class="head_r" style="display:none;"></div>
+        	早上起床吃什么好？
+        </div>
+    </header>
+    <div class="kong50"></div>
+    --end头部-->
+    
+    <!--中部-->
+	<div class="mid">
+    	
+        <div class="wrapm" id="divspacerank">
+					<div class="md-headw" id="blogs_spaceranw">
+						<a class="am10 wrapm cur wid" id="blogs_spaceranw_tab_0" hideFocus onClick="blogs_spaceranw_ck(0);return false;" href="javascript:;"><div>我发布的</div></a>
+						<a class="am10 wrapm" id="blogs_spaceranw_tab_1" hideFocus onClick="blogs_spaceranw_ck(1);return false;" href="javascript:;"><div>我参与的</div></a>
+						<br class=clear>
+					</div>
+					<div class="md-body">
+						<div class="kongw"></div>
+					<!--我发布的-->
+						<div id="blogs_spaceranw_0" style="display: ;">
+                        	<div class="zb_kong"></div>
+                            <div class="guanli_div">
+                            	<a href="ckhd.html">
+                            	<ul class="guanli_ul">
+                                	<li class="guanli_ul_li font16"><img class="guanli_ul_img" src="images/page01.png" />烧烤</li>
+                                    <li class="guanli_ul_li2 color_hui9">10月25日收到1个新报名<span class="backg_lan font9">开启中</span></li>
+                                </ul>
+                                </a>
+                                <ul class="guanli_ul2 color_hui9">
+                                	<li><a href="#"><div class="guanli_ul2_border color_hui9"><img class="guanli_ul_img2" src="images/user.png" />1</div></a></li>
+                                    <li><a href="#"><div class="guanli_ul2_border color_hui9"><img class="guanli_ul_img3" src="images/readh.png" />0</div></a></li>
+                                    <li><a href="#"><div class="color_hui9"><img class="guanli_ul_img4" src="images/zanh.png" />0</div></a></li>
+                                </ul>
+                                
+                            </div>
+                            <div class="guanli_div">
+                            	<a href="tpplck.html">
+                            	<ul class="guanli_ul">
+                                	<li class="guanli_ul_li font16"><img class="guanli_ul_img" src="images/page09.png" />投票</li>
+                                    <li class="guanli_ul_li2 color_hui9">10月25日收到1个新报名<span class="backg_lan font9">开启中</span></li>
+                                </ul>
+                                </a>
+                                <ul class="guanli_ul2 color_hui9">
+                                	<li><a href="#"><div class="guanli_ul2_border color_hui9"><img class="guanli_ul_img2" src="images/tph.png" />1</div></a></li>
+                                    <li><a href="#"><div class="guanli_ul2_border color_hui9"><img class="guanli_ul_img3" src="images/readh.png" />0</div></a></li>
+                                    <li><a href="#"><div class="color_hui9"><img class="guanli_ul_img4" src="images/zanh.png" />0</div></a></li>
+                                </ul>
+                                
+                            </div>
+                            
+                            <div class="zan_p_div3 color_hui9">已全部加载</div>
+                            
+						</div>
+					<!--我参与的-->
+						<div id="blogs_spaceranw_1" style="display: none;">
+							<div class="zb_kong"></div>
+                            <a href="ckhd.html">
+                            <div class="guanli_c_div">
+                            	<div class="guanli_c_div2"><img src="images/06.png" /></div>
+                                <ul class="guanli_c_ul">
+                                	<li class="guanli_c_ul_li font16"><img class="guanli_c_ul_img" src="images/page01.png" />2015年10月25日第二届东盟博览会在民族大道会展中心开幕</li>
+                                    <li class="color_hui9"><img class="guanli_c_ul_img2" src="images/time.png" />2015-10-25 08:30</li>
+                                    <li class="guanli_c_ul_li3 color_hui9"><img class="guanli_c_ul_img3" src="images/loa.png" />南宁 兴宁区</li>
+                                </ul>
+                                <ul class="guanli_c_ul2 color_hui9">
+                                	<li>9月22日参与了该活动</li>
+                                </ul>
+                            </div>
+                            </a>
+                            
+                            <div class="zan_p_div3 color_hui9">已全部加载</div>
+                            
+						</div>
+                        						
+                        
+					</div>
+				</div>
+        
+        <div class="kong10"></div>
+    </div>
+	<!--end中部-->
+    <script>
+		// 切换选卡
+		var blogs_spaceranw_index = 0, blogs_spaceranw_class = 'am10 wrapm ';
+		var blogs_spaceranw_list = document.getElementById('blogs_spaceranw').getElementsByTagName('a');
+		function blogs_spaceranw_ck(_idx) {
+			blogs_spaceranw_list[blogs_spaceranw_index].className = blogs_spaceranw_class;
+			blogs_spaceranw_list[_idx].className = blogs_spaceranw_class + ' cur wid';
+			document.getElementById('blogs_spaceranw_' + blogs_spaceranw_index).style.display = 'none';
+			document.getElementById('blogs_spaceranw_tab_' + blogs_spaceranw_index).innerHTML = document.getElementById('blogs_spaceranw_tab_' + blogs_spaceranw_index).innerHTML.replace("", "");
+			document.getElementById('blogs_spaceranw_' + _idx).style.display = 'block';
+			document.getElementById('blogs_spaceranw_tab_' + _idx).innerHTML = document.getElementById('blogs_spaceranw_tab_' + _idx).innerHTML + "";
+			blogs_spaceranw_index = _idx;
+		}
+	</script>
+    
+
+<!--尾部-->
+<div style="clear: both;height: 60px;"></div>
+    <footer  id="footer">
+        <ul>
+            
+                <li><a href="index.html">
+                    <span class="icon-icon1"></span><br />
+                    首页
+                </a></li>
+            
+            
+                <li><a href="home.html">
+                    <span class="icon-icon2"></span><br />
+                    我
+                </a></li>
+            
+            
+                <li><a href="#">
+                    <span class="icon-icon3"></span><br />
+                    e官网
+                </a></li>
+            
+            
+                <li class="color_foot"><a href="manage.html">
+                    <span class="icon-icon4"></span><br />
+                    管理
+                </a></li>
+            
+        </ul>
+    </footer>
+<!--end尾部-->
+</body>
+</html>

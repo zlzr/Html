@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<head>
+<meta charset="utf-8"/>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<link type="text/css" href="css/basic.css" rel="stylesheet" />
+<link type="text/css" href="css/style.css" rel="stylesheet" />
+<script type="text/javascript" src="js/zepto.js" ></script>
+<title></title>
+
+  
+</head>
+
+<body class="mid2">
+    <!--头部-->
+    <header class="head">
+    	<div class="head_c">
+        	<a href="#"><div class="head_l">返回</div></a>
+            <a href="#"><div class="head_r">预约&nbsp;&nbsp;<span class="head_r_span backg_lan color_f">发布</span></div></a>
+        	自定义主题
+        </div>
+    </header>
+    <div class="kong50"></div>
+    <!--end头部-->
+    
+    <!--中部-->
+	<div class="mid">
+    	<div class="zb_kong"></div>
+        <div class="fbhd_div fbym_div_border">
+        	<div class="fbhd_div2"><span>活动主题</span><input placeholder="一句话描述下主题吧" name="text" type="text"></div>
+        	<textarea placeholder="补充下活动的方案、内容、目的吧！"></textarea>
+        </div>
+        <div class="fbym_div">
+        	<img src="images/picture.png" />
+            <img src="images/video.png" />
+        </div>
+        <ul class="fbhd_ul2">
+        	<li><span>人数上限</span><input placeholder="默认无限制" name="text" type="text"></li>
+        	<li><span>开始时间</span><input placeholder="" name="text" type="time"></li>
+            <li><span>结束时间</span><input placeholder="" name="text" type="time"></li>
+            <li><span>报名截止</span><input placeholder="" name="text" type="time"></li>
+            <li><span>活动地点</span><input placeholder="" name="text" type="text"></li>
+        </ul>
+        <div class="fbwz_div fbym_div_border2">
+        	允许清洁吧推荐<img src="images/chang.png" />
+        </div>
+        <div class="fbwz_div2">
+        	<a href="javascript:tong();" ><img src="images/gou1.png" />我同意</a><a href="#" class="color_lan">《清洁吧服务协议》</a>
+        </div>
+        
+        <div class="kong10"></div>
+    </div>
+	<!--end中部-->
+    <script>
+		$(document).ready(function(){
+			$(".fbwz_div img").bind("click",yun);
+		});
+		function yun(){
+			var imgObj = $(".fbwz_div img");
+			if(imgObj.attr("src")==="images/chang.png"){
+			imgObj.attr("src","images/nochang.png")
+			}else{
+			imgObj.attr("src","images/chang.png")
+			}
+		}
+		function tong(){
+			var imgObj = $(".fbwz_div2 a img");
+			if(imgObj.attr("src")==="images/gou2.png"){
+			imgObj.attr("src","images/gou1.png")
+			}else{
+			imgObj.attr("src","images/gou2.png")
+			}
+		}
+	</script>
+
+
+<!--尾部-->
+<footer>
+
+</footer>
+<!--end尾部-->
+</body>
+</html>

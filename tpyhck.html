@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<head>
+<meta charset="utf-8"/>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<link type="text/css" href="css/basic.css" rel="stylesheet" />
+<link type="text/css" href="css/style.css" rel="stylesheet" />
+<script type="text/javascript" src="js/zepto.js" ></script>
+<title></title>
+
+  
+</head>
+
+<body class="mid2">
+    <!--头部-->
+    <header class="head">
+    	<div class="head_c">
+        	<a href="javascript:window.history.back(-1)"><div class="head_l" style="display:">返回</div></a>
+          <a href="index.html"><div class="head_r" >首页</div></a>
+        	早上起床吃什么好？
+        </div>
+    </header>
+    <div class="kong50"></div>
+    <!--end头部-->
+    
+    <!--中部-->
+	<div class="mid">
+    	
+        <h3 class="hdyhck_h3 font16">早上起床吃什么好？</h3>
+        <ul class="hdyhck_ul3 font9">
+        	<li class="hdyhck_ul3_li color_lan"><img class="hdyhck_ul3_img" src="images/01.png" /><span class="color_hui9">14小时前</span>忧伤的你 忧伤的你忧伤的你忧伤的你忧伤的你忧伤的你</li>
+            <li class="hdyhck_ul3_li2 color_hui9"><span>分享 1+</span>阅读 16</li>
+        </ul>
+        <div class="tpyhck_div">
+        	主要了解大部分人的生活习惯。
+        </div>
+        <!---->
+        <div class="tpyhck_div2 backg_hui">
+        	<div class="tpyhck_div3 font9 color_hui9">
+            	不记名投票<br/>
+                单选，已投1票，投票后可见结果
+            </div>
+            <ul class="tpyhck_ul">
+            	<li>水<img id="d1" src="images/gou2.png" /></li>
+                <li>牛奶<img src="images/gou2.png" /></li>
+                <li>零食<img src="images/gou2.png" /></li>
+                <li>水果<img src="images/gou1.png" /></li>
+            </ul>
+            <div class="tpyhck_div5 font9 color_hui9">投票将于2015-10-15 22:00关闭</div>
+        </div>
+        <!---->
+        
+        <div></div>
+        <ul class="hdyhck_ul2 color_lan" style="margin-bottom:-10px !important;">
+            <li class="hdyhck_p_span2"><span class="hdyhck_p_span"><img class="hdyhck_p_img2" src="images/love.png" />赞(1)</span></li>
+        </ul>
+        <ul class="tpyhck_ul2 backg_hui color_lan">
+            <li><img class="hdyhck_p_img2" src="images/love.png" />忧伤的你</li>
+        </ul>
+        <ul class="tpyhck_ul3 backg_hui color_hui9">
+            <li class="tpyhck_ul3_span2"><span class="tpyhck_ul3_span"><img class="hdyhck_p_img2" src="images/comments.png" />评论</span><span class="color_hui9">2条评论</span></li>
+            <li class="tpyhck_ul3_li">
+            	<div class="color_lan"><img class="tpyhck_ul3_img" src="images/01.png" /><span class="tpyhck_ul3_span3 color_hui9">26分钟前</span>忧伤的你</div>
+            	活动挺有意思，很不错的哦！
+            </li>
+            <li class="tpyhck_ul3_li">
+            	<div class="color_lan"><img class="tpyhck_ul3_img" src="images/01.png" /><span class="tpyhck_ul3_span3 color_hui9">26分钟前</span>忧伤的你</div>
+            	活动挺有意思，很不错的哦！
+            </li>
+        </ul>
+        
+        
+        <div class="kong10"></div>
+        <!---->
+        <div class="tphdck_foot60"></div>
+        <div class="tphdck_foot">
+        	<ul>
+            	<li><a href="vote.html"><div class="tphdck_foot_border tphdck_foot_img"><img src="images/release.png" /><br/>发布投票</div></a></li>
+                <li><a href="#"><div class="tphdck_foot_border"><img class="tphdck_foot_img2" src="images/shareh.png" /><br/>下一篇</div></a></li>
+                <li><a href="#"><div class="backg_lan color_f"><img class="tphdck_foot_img2" src="images/tp.png" /><br/>我要投票</div></a></li>
+            </ul>
+        </div>
+        
+        
+    </div>
+	<!--end中部-->
+    
+    <script>
+$(document).ready(function(){
+	$(".tpyhck_ul li").bind("click",tpyhck);
+	
+});
+function tpyhck(){
+	var imgObj = $(this).children("img");
+	if(imgObj.attr("src")==="images/gou2.png"){
+		$(".tpyhck_ul li img").attr("src","images/gou2.png")
+		imgObj.attr("src","images/gou1.png")
+	}
+/*
+var imgObj = $(this).children("img");
+	if(imgObj.attr("src")==="images/gou2.png"){
+	imgObj.attr("src","images/gou1.png")
+	}else{
+	imgObj.attr("src","images/gou2.png")
+	}
+*/
+}
+</script>
+
+
+<!--尾部-->
+<footer>
+
+</footer>
+<!--end尾部-->
+</body>
+</html>

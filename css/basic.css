@@ -1,0 +1,55 @@
+body, p, form, input, button, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6 { list-style: none outside none;margin: 0 auto;padding: 0;}
+* { outline: 0 none; -webkit-appearance: none;}
+*:not(input){-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-touch-callout:none;-webkit-text-size-adjust:none;}
+input:focus, select:focus, textarea:focus, button:focus {outline: medium none;}
+body {-moz-user-select: none;background: none repeat scroll 0 0 #efeff4;color: #333;font-family: "微软雅黑",Helvetica,STHeiti STXihei,Microsoft JhengHei,Microsoft YaHei,Arial; font-size: 14px;height: 100%; line-height: 1.5; margin: 0 auto;padding: 0;}
+ul {list-style: none;}
+a {text-decoration: none;color: #333;}
+img { border: medium none;max-width: 100%;border: 0 none;}
+img, input {vertical-align: middle;}
+
+/*头部*/
+.head{ height:50px; width:100%; background:#000; position:fixed; z-index:600; top:0px; color:#fff; line-height:50px; text-align: center;}
+.head_l{ position:absolute; left:10px; top:0px;font-size:16px; color:#fff;}
+.head_r{ position:absolute; right:10px; top:0px;font-size:16px; color:#fff;}
+.head_c{ position:relative; top:0px; font-size:18px;overflow:hidden;text-overflow:ellipsis; white-space: nowrap; padding-left:60px; padding-right:60px; height:50px;}
+.head_r_span{ border-radius:3px; padding:3px 5px;}
+.kong50{ height:50px;width:100%; clear:both;}
+.kong10{ height:10px;width:100%; clear:both;}
+
+/*mid 中间*/
+.kong_zi{ visibility:hidden;}
+.mid2{ background:#fff;}
+
+/* */
+.font9{ font-size:9px;}
+.font12{ font-size:12px;}
+.font14{ font-size:14px;}
+.font16{ font-size:16px;}
+.font18{ font-size:18px;}
+.font20{ font-size:20px;}
+/* */
+.color_f{ color:#fff;}
+.color_hui9{ color:#999;}
+.color_hui2{ color:#666;}
+.color_huang{ color:#f39700;}
+.color_lan{ color:#1785e9;}
+.color_hong{ color:#b71414;}
+.color_shenhong{color:#b32165;}
+.backg_bai{ background:#fff;}
+.backg_lan{ background:#1785e9;}
+.backg_qianlan{ background:#e1f3ff;}
+.backg_huang{ background:#f39700;}
+.backg_lv{ background:#22ac38;}
+.backg_hui{ background:#efeff4;}
+.backg_hei{ background:#2c2b30;}
+.backg_fabu{ background:#999;}
+
+
+/*尾部*/
+#footer{width: 100%;height: 50px;position: fixed;bottom: 0;left: 0;background-size: 100% 100%;
+	-webkit-transition-duration: 350ms;list-style-position: inside;background: #fff;border-top: 1px solid #e3e3e3;}
+/*#footer ul a{color: #666;}*/
+#footer ul li{width: 25%;float: left;text-align: center;line-height: 16px;padding-top:5px;font-size: 10px;height: 39px;}
+.color_foot a{color: #1785e9;}
+/*---end---*/
